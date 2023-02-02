@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Lumache'
+project = 'Kiwi Smart Home'
 copyright = '2021, Graziella'
 author = 'Graziella'
 
