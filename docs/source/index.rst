@@ -20,5 +20,4 @@ This has its documentation hosted on Read the Docs.
    :hidden:
    :caption: Toys
 
-   /toys
    /retropie
