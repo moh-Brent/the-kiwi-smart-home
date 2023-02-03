@@ -9,6 +9,15 @@ This has its documentation hosted on Read the Docs.
 .. toctree::
    :maxdepth: 2
    :hidden:
+   :caption: Home Assistant
+
+   /ha/home assistant
+
+   
+   
+.. toctree::
+   :maxdepth: 2
+   :hidden:
    :caption: Toys
 
    /toys
