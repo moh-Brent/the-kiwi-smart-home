@@ -1,6 +1,8 @@
 The Kiwi Smart Home!
 ===================================
 
+.. contents:: Table of Contents
+
 ****
 TEST
 ****
@@ -8,7 +10,7 @@ TEST
 Test
 ^^^^
 
-.. contents:: Table of Contents
+
 
 This is just to go therough what I use in my smart home and a few toys.
 
