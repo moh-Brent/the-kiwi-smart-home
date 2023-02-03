@@ -13,16 +13,25 @@ We will be showing you the process of installing and configuring RetroPie on you
 For those who do not know what RetroPie is, it is a software package that is built on top of the Raspbian operating system. The package contains a range of different software that will enable the ability to emulate and play classic games.
 RetroPie makes use of EmulationStation as its visual front end and uses the RetroArch project and various other emulator projects to emulate your games.
 There are other emulator software packages that you can use instead of RetroPie. Be sure to check them out if you’re feeling adventurous.
+
 Equipment
 ---------
 Below is all the equipment that you will need for setting up RetroPie on your Raspberry Pi.
+
 Recommended
+
 •	Raspberry Pi
+
 •	Micro SD Card
+
 •	USB Keyboard
+
 •	USB Mouse
+
 •	HDMI Cable
+
 •	Monitor
+
 Optional
 •	Retro USB Controllers or Joysticks
 •	Xbox Controller
@@ -35,16 +44,23 @@ How to setup Raspberry Pi RetroPie
 Learn how to setup and run RetroPie on the Raspberry Pi
 0 seconds of 6 minutes, 15 secondsVolume 90%
  
-.
+
 Installing RetroPie from Image
 ------------------------------
 1. The first thing we need to do is obtain a copy of the RetroPie image for the Raspberry Pi.
+
 You can find the available pre-built RetroPie images from the official RetroPie GitHub repository.
+
 On this page, you should see the latest available release with a few download links near the bottom of the page. You will need to select the right image for your Raspberry Pi.
+
 If you are using a Raspberry Pi 1 or a Raspberry Pi Zero, then download the “rpi1_zero.img.gz” file.
+
 If you are using a Raspberry Pi 3 or newer, then download the “rpi2_rpi3.img.gz” file.
+
 This image is a pre-built version of Raspbian Stretch that has RetroPie already set up on it and is one of the easiest ways to get the emulators running on your Raspberry Pi quickly.
+
 If you would prefer you can setup RetroPie on your current installation, but we will go into those steps in another section.
+
 2. Now that we have the RetroPie image, we will need to write the image to an SD Card that we are going to use with the Raspberry Pi.
 To do this, we will be making use of a tool called “Etcher“. This tool will format the SD card and write the RetroPie image to it.
 You can download Etcher by going to Etcher’s official website.
@@ -237,6 +253,10 @@ sudo mount -t cifs -o username="<username>",password="<password>",nounix,noserve
 Once done, go ahead and save the file by pressing CTRL + X followed by Y and then ENTER.
 6. Now that we have added the mounting line to the autostart file, we need to go ahead and restart the Raspberry Pi so that it will load in the data from stored on the shared drive.
 We can restart the Raspberry Pi by running the command below.
-sudo rebootCopy
+
+
+   .. code-block:: bash
+
+      sudo rebootCopy
 
 IT'S PLAY TIME :)
