@@ -1,5 +1,8 @@
 RetroPie
 ========
+
+.. contents:: Table of Contents
+
 Play Retro Games with Raspberry Pi RetroPie
 -------------------------------------------
 In this Raspberry Pi RetroPie tutorial, we will show you how to install the popular RetroPie distribution to your Raspberry Pi and turn it into a retro gaming machine.
