@@ -14,6 +14,7 @@ For those who do not know what RetroPie is, it is a software package that is bui
 RetroPie makes use of EmulationStation as its visual front end and uses the RetroArch project and various other emulator projects to emulate your games.
 There are other emulator software packages that you can use instead of RetroPie. Be sure to check them out if you’re feeling adventurous.
 Equipment
+---------
 Below is all the equipment that you will need for setting up RetroPie on your Raspberry Pi.
 Recommended
 •	Raspberry Pi
@@ -34,8 +35,9 @@ How to setup Raspberry Pi RetroPie
 Learn how to setup and run RetroPie on the Raspberry Pi
 0 seconds of 6 minutes, 15 secondsVolume 90%
  
-Adblock removing the video? Support us by subscribing to our ad-free service.
+.
 Installing RetroPie from Image
+------------------------------
 1. The first thing we need to do is obtain a copy of the RetroPie image for the Raspberry Pi.
 You can find the available pre-built RetroPie images from the official RetroPie GitHub repository.
 On this page, you should see the latest available release with a few download links near the bottom of the page. You will need to select the right image for your Raspberry Pi.
@@ -57,6 +59,7 @@ Make sure the one you choose is, in fact, your SD card as it will erase all data
 5. Now with the right image selected and the correct drive selected, you can now proceed to flash the SD Card by clicking the “Flash!” button.
  
 Installing RetroPie from Scratch
+--------------------------------
 If you decide that you would like to install RetroPie from scratch and not use the prebuilt image provided by the RetroPie team, then you can follow the instructions below.
 Please note that it is recommended to use the prebuilt image as it comes with several things already setup and configured. You are also less likely to run into configuration issues from the beginning.
 1. Before you begin, we will need to ensure that we have at least 2GB free on the Raspberry Pi’s SD Card for the RetroPie software to be able to install everything it needs.
@@ -107,7 +110,9 @@ Start by pressing “ESC” until you get back to the main menu.
 Once on the main menu, select the “Perform reboot” option to reboot the Raspberry Pi.
  
 Upon rebooting the Raspberry Pi should end up showing the EmulationStation startup screen. This screen indicates that you have successfully setup the RetroPie software on your Raspberry Pi.
+
 Adding ROMS for the Raspberry Pi RetroPie Emulators
+---------------------------------------------------
 ROM is short for read-only memory and is the format in which you will find pretty much all the classic games.
  
 ROMs can be easily found on the internet and since there many different sources it’s best just to google the game you wish to download followed by ROM, e.g. (“Doom ROM”).
@@ -140,7 +145,9 @@ Below we have included a screenshot of what the folder layout should look like a
 11. Once you have finished copying your ROMs to the USB, plug it back into the Raspberry Pi.
 The RetroPie software will immediately start copying these files off of the USB drive. Don’t take out your USB for some time as this process can take considerable time.
 12. Refresh EmulationStation by pressing F4, or choosing “quit” from the start menu.
+
 Copying ROMS over SFTP
+----------------------
 1. Before you can utilize SFTP to transfer files between your computer and the Raspberry Pi, you will need first to enable SSH.
 You can do this by going to the RetroPie “Configuration” menu within the Emulation Station UI. Within this menu, select “RASPI-CONFIG“.
 2. Within the Raspberry configuration tool go to “5 Interfacing Options“, then within that menu select “P2 SSH“.
@@ -169,7 +176,9 @@ For example, for a SNES game, you would drag and drop the file onto the folder n
 The WinSCP software will immediately begin to copy the files you dropped over into the folder. This process can take some time depending on both your hard drive and network speeds.
 7. Back on your Raspberry Pi, you can refresh the Emulation Station software by pressing F4, or choosing “quit” from the start menu and relaunching the software.
 Your new roms may not show up without refreshing the EmulationStation software.
+
 Copying ROMs over Samba Network shares
+--------------------------------------
 A clean installation of RetroPie from their precompiled images has “Samba” pre-installed and enabled by default.
 However, if you installed this on Raspbian separately and not from the RetroPie image, you will need to enable it manually.
 Samba is the interface that allows Linux and Mac-based devices to connect with Microsoft’s shared network devices interface.
@@ -203,7 +212,9 @@ Password: raspberry
 8. Once in, you can now copy any file you want to your Raspberry Pi.
 For copying roms, you will want to go into “roms” and copy the file into the folder of the console it belongs with.
 For instance, a SNES game will go in the folder called snes.
+
 Connecting a Network Share to Load ROMs
+---------------------------------------
 1. Before you connect up a network share, you must first make sure you have your ROMs are sorted into the structure that the RetroPie software expects.
 You can find this folder structure on your Raspberry Pi by using SSH and running the following command.
 ls ~/RetroPie/romsCopy
@@ -227,4 +238,5 @@ Once done, go ahead and save the file by pressing CTRL + X followed by Y and the
 6. Now that we have added the mounting line to the autostart file, we need to go ahead and restart the Raspberry Pi so that it will load in the data from stored on the shared drive.
 We can restart the Raspberry Pi by running the command below.
 sudo rebootCopy
-I hope by the end of this Raspberry Pi RetroPie tutorial you are able to load and play the classics you want. If you want to leave some feedback, then please don’t hesitate to leave a comment below.
+
+IT'S PLAY TIME :)
