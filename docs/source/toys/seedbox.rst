@@ -64,24 +64,27 @@ Before mounting drives install the following utilities
    .. code-block:: bash
 	sudo apt-get install cifs-utils nfs-common
 	
-If the error relates to setting up an sshfs mount, the sshfs package may be missing (fix with
+If the error relates to setting up an sshfs mount, the sshfs package may be missing , install using the below.
 .. code-block:: bash
 
-sudo apt install sshfs )
+	sudo apt install sshfs )
 
 Backup FSTAB file
 -----------------
-   .. code-block:: bash
+.. code-block:: bash
+	
 	sudo cp /etc/fstab /etc/fstab.backup
 
 Now we can edit fstab:
 
-   .. code-block:: bash
+.. code-block:: bash
+
 	sudo nano /etc/fstab
 
 add the following
 
-   .. code-block:: bash
+.. code-block:: bash
+
 	192.168.0.XXX:/data/plex /shares/plex nfs defaults 0 0
 	192.168.0.XXX:/data/backup /shares/backup nfs defaults 0 0
 
@@ -89,7 +92,7 @@ Ctrl X+Y Enter
 
 
 Reboot
-   .. code-block:: bash
+.. code-block:: bash
    
 	sudo reboot
 
@@ -118,11 +121,11 @@ Should already be installed as per xxxxxxxxx
 DELUGE + OPENVPN
 ================
 
-   .. code-block:: bash
+.. code-block:: bash
    
 	sudo docker pull sgtsquiggs/deluge-openvpn
 
-   .. code-block:: bash
+.. code-block:: bash
    
 	sudo docker run --cap-add=NET_ADMIN --device=/dev/net/tun -d \
 		      --name=deluge_openvpn \
@@ -157,7 +160,7 @@ JACKETT
 
 Before we setup Sonarr and crew, lets start with Jackett. Similar to the command before, we need to edit the two '-v' lines:
 
-   .. code-block:: bash
+.. code-block:: bash
    
 	sudo docker create \
 	  --name=jackett \
@@ -177,7 +180,7 @@ http://192.168.0.XXX:9117/UI/Dashboard
 OMBI
 ====
 
-   .. code-block:: bash
+.. code-block:: bash
    
 	sudo docker create \
 	  --name=ombi \
@@ -197,7 +200,7 @@ http://192.168.0.XXX:3579
 SONARR
 ======
 
-   .. code-block:: bash
+.. code-block:: bash
 
 	sudo docker create \
 	  --name=sonarr \
@@ -217,7 +220,7 @@ Enable apt-get to install from https sources or you will get this error
 The method driver /usr/lib/apt/methods/https could not be found.
 To solve it install the https package
 
-   .. code-block:: bash
+.. code-block:: bash
    
 	sudo apt-get install apt-transport-https -y --force-yes
 
@@ -231,7 +234,7 @@ RADARR
 
 Command to edit and run:
 
-   .. code-block:: bash
+.. code-block:: bash
    
 	sudo docker create \
 	  --name=radarr \
@@ -250,7 +253,7 @@ http://192.168.0.XXX:7878
 
 LIDARR
 ======
-   .. code-block:: bash
+.. code-block:: bash
    
 	sudo docker create \
 	  --name=lidarr \
@@ -275,7 +278,7 @@ https://github.com/causefx/Organizr
 https://organizr.app/
 
 https://docs.organizr.app/books/setup-features/page/sso
-   .. code-block:: bash
+.. code-block:: bash
 	sudo docker create \
 	  --name=organizr \
 	  -v /shares/seedbox/organizr/config:/config \
