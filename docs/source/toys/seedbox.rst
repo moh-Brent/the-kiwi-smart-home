@@ -92,6 +92,7 @@ Ctrl X+Y Enter
 
 
 Reboot
+
 .. code-block:: bash
    
 	sudo reboot
