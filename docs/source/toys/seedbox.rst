@@ -6,15 +6,22 @@ Seedbox
 
 The Setup
 ---------
+I have Proxmox setup on my server with a few Virtual Machines.
+One of them is my Seedbox, I won't go into the setup of Proxcmox and the VM but you can look ast my basic tutorial here.
 
-Installed on ProxmoxVE
-with Debian on the VM
+I'm using Debian as my OS of choice and I have a User and Password that is setup (standardised) across my devices, unfortunately I have to do that nmanually as I do not have a centralised login server.  Overkill for my and just about everyones home networks.
 
-Login to Debain VM
+Login to Debain VM or use PuTTy https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html to get access to the OS.
 
-SETUP NETWORK DRIVES AND MOUNT
+Install Docker
+--------------
+Docker will hold all the apps that we will need to use for the Seedbox.
+
+Setup Network Drives and Mount
 ------------------------------
 
+NAS Folders and Share
+=====================
 Setup NAS Drive Folders to Share
 
 Create users with the correct UID and GID
@@ -27,13 +34,13 @@ Share Drives
 
 AS PER INSTRUCTIONS IN NUC DOCS ADD DETAILS
 
-HTPC CREATE AND MOUNT DRIVES 
---------------------------------
+Create and Mount Drives on your OS
+==============================
 Login using “The_Login” account this is required as the folders on the NAS will be setup with “The_Login” UID and GID = 1000
 
 
-Create the folders
-------------------
+Create the Folders
+==================
 Not sure you need to use sudo for these as I have changed this and it works
 
    .. code-block:: bash
@@ -52,8 +59,10 @@ or
 Mount Drives at System Startup
 ------------------------------
 Before mounting drives install the following utilities
-sudo apt-get install cifs-utils nfs-common
-If the error relates to setting up an sshfs mount, the sshfs package may be missing (fix with sudo apt install sshfs )
+   .. code-block:: bash
+	sudo apt-get install cifs-utils nfs-common
+	
+If the error relates to setting up an sshfs mount, the sshfs package may be missing (fix with    .. code-block:: bash sudo apt install sshfs )
 
 Backup FSTAB file
 -----------------
