@@ -64,7 +64,10 @@ Before mounting drives install the following utilities
    .. code-block:: bash
 	sudo apt-get install cifs-utils nfs-common
 	
-If the error relates to setting up an sshfs mount, the sshfs package may be missing (fix with    .. code-block:: bash sudo apt install sshfs )
+If the error relates to setting up an sshfs mount, the sshfs package may be missing (fix with
+.. code-block:: bash
+
+sudo apt install sshfs )
 
 Backup FSTAB file
 -----------------
