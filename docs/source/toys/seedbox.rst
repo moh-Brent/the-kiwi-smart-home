@@ -44,6 +44,7 @@ Create the Folders
 Not sure you need to use sudo for these as I have changed this and it works
 
 .. code-block:: bash
+
 	sudo mkdir /shares
 	sudo mkdir /shares/backup
 	sudo mkdir /shares/plex 
@@ -51,6 +52,7 @@ Not sure you need to use sudo for these as I have changed this and it works
 or
 
 .. code-block:: bash
+
 	sudo mkdir /shares
 	mkdir /shares/backup
 	mkdir /shares/plex
