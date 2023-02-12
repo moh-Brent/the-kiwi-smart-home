@@ -13,6 +13,9 @@ I'm using Debian as my OS of choice and I have a User and Password that is setup
 
 Login to Debain VM or use PuTTy https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html to get access to the OS.
 
+Windows CMD or PowerShell
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Install Docker
 --------------
 Docker will hold all the apps that we will need to use for the Seedbox.
