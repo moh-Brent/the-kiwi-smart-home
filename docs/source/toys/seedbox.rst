@@ -73,7 +73,7 @@ If the error relates to setting up an sshfs mount, the sshfs package may be miss
 	sudo apt install sshfs
 
 Backup FSTAB file
------------------
+=================
 .. code-block:: bash
 	
 	sudo cp /etc/fstab /etc/fstab.backup
@@ -113,7 +113,7 @@ Should already be installed as per xxxxxxxxx
 
 
 Deluge + OpenVPN
-================
+----------------
 
 .. code-block:: bash
    
@@ -150,7 +150,7 @@ Deluge + OpenVPN
 
 
 Jacket
-=======
+------
 
 Before we setup Sonarr and crew, lets start with Jackett. Similar to the command before, we need to edit the two '-v' lines:
 
@@ -172,7 +172,7 @@ Before we setup Sonarr and crew, lets start with Jackett. Similar to the command
 http://192.168.0.XXX:9117/UI/Dashboard 
 
 OMBI
-====
+----
 
 .. code-block:: bash
    
@@ -192,7 +192,7 @@ http://192.168.0.XXX:3579
 
 
 Sonarr
-======
+------
 
 .. code-block:: bash
 
@@ -221,10 +221,10 @@ To solve it install the https package
 Connect to it using http://192.168.0.XXX:8989/ or whatever your IP address is.
 
 Configure Sonarr
-----------------
+================
 
 Radarr
-======
+------
 
 Command to edit and run:
 
@@ -246,7 +246,7 @@ Command to edit and run:
 http://192.168.0.XXX:7878
 
 Lidarr
-======
+------
 .. code-block:: bash
    
 	sudo docker create \
@@ -265,7 +265,7 @@ http://192.168.0.XXX:8686
 
 
 Organizr
-========
+--------
 
 https://github.com/causefx/Organizr
 
