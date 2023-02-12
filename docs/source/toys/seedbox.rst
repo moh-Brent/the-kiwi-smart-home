@@ -103,26 +103,16 @@ Reboot
 log in and check that you can see all the files from your shared storage
 
 
-DOCKER-CE
-=========
+Portainer
+---------
 
-https://dev.to/rohansawant/installing-docker-and-docker-compose-on-the-raspberry-pi-in-5-simple-steps-3mgl
-
-INSTALLING DOCKER
------------------
-
-Should already be installed as per xxxxxxxxx
-
-PORTAINER
-=========
-
-INSTALL PORTAINER
------------------
+Install Portainer
+=================
 
 Should already be installed as per xxxxxxxxx
 
 
-DELUGE + OPENVPN
+Deluge + OpenVPN
 ================
 
 .. code-block:: bash
@@ -159,7 +149,7 @@ DELUGE + OPENVPN
 
 
 
-JACKETT
+Jacket
 =======
 
 Before we setup Sonarr and crew, lets start with Jackett. Similar to the command before, we need to edit the two '-v' lines:
@@ -201,7 +191,7 @@ OMBI
 http://192.168.0.XXX:3579 
 
 
-SONARR
+Sonarr
 ======
 
 .. code-block:: bash
@@ -230,10 +220,10 @@ To solve it install the https package
 
 Connect to it using http://192.168.0.XXX:8989/ or whatever your IP address is.
 
-CONFIGURE SONARR
+Configure Sonarr
 ----------------
 
-RADARR
+Radarr
 ======
 
 Command to edit and run:
@@ -255,7 +245,7 @@ Command to edit and run:
 
 http://192.168.0.XXX:7878
 
-LIDARR
+Lidarr
 ======
 .. code-block:: bash
    
@@ -274,7 +264,7 @@ LIDARR
 http://192.168.0.XXX:8686
 
 
-ORGANIZR
+Organizr
 ========
 
 https://github.com/causefx/Organizr
@@ -282,7 +272,9 @@ https://github.com/causefx/Organizr
 https://organizr.app/
 
 https://docs.organizr.app/books/setup-features/page/sso
+
 .. code-block:: bash
+
 	sudo docker create \
 	  --name=organizr \
 	  -v /shares/seedbox/organizr/config:/config \
