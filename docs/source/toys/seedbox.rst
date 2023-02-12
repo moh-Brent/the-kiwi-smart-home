@@ -214,9 +214,11 @@ Enable apt-get to install from https sources or you will get this error
 
 The method driver /usr/lib/apt/methods/https could not be found.
 To solve it install the https package
+
 .. code-block:: bash
    
 	sudo apt-get install apt-transport-https -y --force-yes
+
 Connect to it using http://192.168.0.XXX:8989/ or whatever your IP address is.
 
 Configure Sonarr
