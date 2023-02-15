@@ -23,9 +23,13 @@ This has its documentation hosted on Read the Docs.
    :caption: Home Assistant
 
    /ha/home assistant
-   /proxmox
 
-   
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Proxmox
+
+   /proxmox/proxmox
    
 .. toctree::
    :maxdepth: 2
