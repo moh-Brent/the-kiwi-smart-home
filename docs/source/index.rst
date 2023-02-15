@@ -23,6 +23,7 @@ This has its documentation hosted on Read the Docs.
    :caption: Home Assistant
 
    /ha/home assistant
+   /proxmox
 
    
    
